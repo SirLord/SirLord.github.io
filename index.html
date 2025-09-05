@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Adrian - Senior Data Scientist Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .no-print {
+                display: none;
+            }
+            .resume-container {
+                box-shadow: none !important;
+                margin: 0 !important;
+                border: none !important;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+            /* Add print-specific layout styles */
+            .print-container {
+                display: flex !important;
+                flex-direction: row !important;
+            }
+            .print-sidebar {
+                width: 33.333333% !important;
+            }
+            .print-main {
+                width: 66.666667% !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-4 sm:p-8">
+
+    <div class="max-w-6xl mx-auto no-print mb-4 text-center">
+        <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg shadow-md transition-transform transform hover:scale-105">
+            <i class="fas fa-download mr-2"></i> Download as PDF
+        </button>
+    </div>
+
+    <div class="resume-container max-w-6xl mx-auto bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
+        <div class="flex flex-col lg:flex-row print-container">
+            <!-- Left Column / Sidebar -->
+            <aside class="w-full lg:w-1/3 bg-gray-800 text-white p-8 print-sidebar">
+                <div class="flex flex-col items-center lg:items-start">
+                    <h1 class="text-4xl font-bold text-white tracking-tight">Dr. Andrew Adrian</h1>
+                    <h2 class="text-xl font-light text-blue-300 mt-1">Senior Data Scientist</h2>
+                </div>
+
+                <div class="mt-10">
+                    <h3 class="text-lg font-semibold text-blue-300 uppercase tracking-wider border-b-2 border-blue-400 pb-2">Contact</h3>
+                    <ul class="mt-4 space-y-3 text-gray-300">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope fa-fw w-6 text-blue-300"></i>
+                            <span>andrew.blake.adrian@gmail.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-linkedin fa-fw w-6 text-blue-300"></i>
+                            <span>linkedin.com/in/andrewadrian/</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-github fa-fw w-6 text-blue-300"></i>
+                            <span>github.com/SirLord</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt fa-fw w-6 text-blue-300"></i>
+                            <span>Yorktown, VA</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mt-10">
+                    <h3 class="text-lg font-semibold text-blue-300 uppercase tracking-wider border-b-2 border-blue-400 pb-2">Technical Skills</h3>
+                    <div class="mt-4">
+                        <h4 class="font-semibold text-gray-100">Languages & Databases</h4>
+                        <p class="text-sm text-gray-300 mt-1">Python (pandas, NumPy, SciPy), SQL, R, Shell Scripting, PostgreSQL, MS SQL Server, SQLite, Amazon RDS, Redshift</p>
+                    </div>
+                    <div class="mt-4">
+                        <h4 class="font-semibold text-gray-100">ML & AI</h4>
+                        <p class="text-sm text-gray-300 mt-1">Generative AI (LLMs, AWS Bedrock), NLP, Deep Learning (PyTorch, TensorFlow, Keras), Scikit-learn, XGBoost, Predictive Modeling</p>
+                    </div>
+                    <div class="mt-4">
+                        <h4 class="font-semibold text-gray-100">Cloud & MLOps</h4>
+                        <p class="text-sm text-gray-300 mt-1">AWS (S3, EC2, SageMaker, Lambda, Bedrock), Databricks, ETL, CI/CD, MLOps, Git/GitHub</p>
+                    </div>
+                     <div class="mt-4">
+                        <h4 class="font-semibold text-gray-100">Data Visualization & BI</h4>
+                        <p class="text-sm text-gray-300 mt-1">Tableau, Power BI, Plotly, ggplot2</p>
+                    </div>
+                </div>
+
+                <div class="mt-10">
+                    <h3 class="text-lg font-semibold text-blue-300 uppercase tracking-wider border-b-2 border-blue-400 pb-2">Education</h3>
+                    <div class="mt-4">
+                        <h4 class="font-semibold text-gray-100">PhD, Bioinformatics</h4>
+                        <p class="text-sm text-gray-400">The University of Iowa</p>
+                    </div>
+                    <div class="mt-4">
+                        <h4 class="font-semibold text-gray-100">BS, Biology</h4>
+                        <p class="text-sm text-gray-400">University of Alabama in Huntsville</p>
+                    </div>
+                </div>
+
+            </aside>
+
+            <!-- Right Column / Main Content -->
+            <main class="w-full lg:w-2/3 p-8 print-main">
+                <section>
+                    <h3 class="text-2xl font-bold text-gray-800 border-b-4 border-gray-300 pb-2">Professional Summary</h3>
+                    <p class="mt-4 text-gray-700 leading-relaxed">
+                        Senior Data Scientist with over 10 years of experience leveraging data analytics, machine learning, and generative AI to solve complex challenges in the public sector. A proven leader who has managed a 7-person analytics team, mentored junior scientists, and driven strategic decision-making through data. Expert in architecting full-stack data solutions, from ETL pipelines (Python, SQL, Databricks) to deploying advanced AI applications on AWS, delivering significant improvements in efficiency and operational capability, highlighted by projects that automated thousands of labor hours and enabled a strategic workforce reduction of over 4,000 FTEs.
+                    </p>
+                </section>
+
+                <section class="mt-10">
+                    <h3 class="text-2xl font-bold text-gray-800 border-b-4 border-gray-300 pb-2">Work Experience</h3>
+                    <div class="mt-6">
+                        <div class="flex justify-between items-baseline">
+                            <h4 class="text-xl font-semibold text-gray-900">Senior Data Scientist, Data Analytics Lead</h4>
+                            <div class="text-sm text-gray-600 font-medium">June 2020 – Present</div>
+                        </div>
+                        <div class="text-md text-gray-700 font-medium">NASA | Hampton, VA</div>
+                        <ul class="list-disc list-outside mt-3 ml-5 space-y-2 text-gray-700">
+                            <li>Lead and mentor a 7-person data analytics team, overseeing project management and setting best practices for statistical analysis and ML development.</li>
+                            <li>Architected a predictive modeling application to optimize workforce allocation, directly enabling a strategic reduction of over 4,000 FTEs.</li>
+                            <li>Spearheaded the development and deployment of 'OCHCOchat,' a generative AI-powered HR assistant using AWS Bedrock (Claude), enhancing HR support efficiency.</li>
+                            <li>Engineered robust ETL pipelines using Python, SQL, and Databricks to process and analyze large-scale datasets for critical initiatives.</li>
+                            <li>Manage over $75,000 in AWS cloud infrastructure, ensuring scalable and cost-effective data processing solutions.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-8">
+                        <div class="flex justify-between items-baseline">
+                            <h4 class="text-xl font-semibold text-gray-900">Senior Data Scientist</h4>
+                            <div class="text-sm text-gray-600 font-medium">Aug 2018 – June 2020</div>
+                        </div>
+                        <div class="text-md text-gray-700 font-medium">Science Applications Intl Corp (SAIC) | Washington, DC</div>
+                        <ul class="list-disc list-outside mt-3 ml-5 space-y-2 text-gray-700">
+                            <li>Developed the foundational prototype for the mission scheduling and visualization application currently used to coordinate NASA's Artemis moon missions.</li>
+                            <li>Led the agency-wide implementation of GitHub Enterprise, establishing a centralized code repository that standardized version control and enabled reproducible research across NASA.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-8">
+                         <div class="flex justify-between items-baseline">
+                            <h4 class="text-xl font-semibold text-gray-900">AAAS Science and Technology Policy Fellow</h4>
+                            <div class="text-sm text-gray-600 font-medium">Aug 2016 – Aug 2018</div>
+                        </div>
+                        <div class="text-md text-gray-700 font-medium">NASA | Washington, DC</div>
+                         <ul class="list-disc list-outside mt-3 ml-5 space-y-2 text-gray-700">
+                            <li>Engineered an NLP and machine learning pipeline to classify unstructured text from email records, automating a manual process and saving thousands of agency labor hours annually.</li>
+                            <li>Designed and deployed cloud infrastructure on AWS that currently supports microbiology research objectives for the International Space Station (ISS).</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="mt-10">
+                     <h3 class="text-2xl font-bold text-gray-800 border-b-4 border-gray-300 pb-2">Selected Publications</h3>
+                     <ul class="list-disc list-outside mt-4 ml-5 space-y-2 text-gray-700">
+                        <li><em>Predictive Models of Recombination Rate Variation across the Drosophila melanogaster Genome.</em> Genome Biology and Evolution. 2016.</li>
+                        <li><em>Using Artificial Intelligence to Augment Science Prioritization for Astro2020.</em> Decadal Survey of Astronomy and Astrophysics. 2019.</li>
+                        <li><em> Improving Data Access and Data Management: Artificial Intelligence Generated Metadata Tags at NASA</em> strategy.data.gov 2019.</li>
+                     </ul>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>
+
